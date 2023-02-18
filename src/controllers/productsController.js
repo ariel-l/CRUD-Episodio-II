@@ -73,8 +73,6 @@ const controller = {
 
 		products.forEach(product => {
 			if (product.id === +productID) {
-				console.log(req.file.filename);
-				console.log('hola')
 				product.name = req.body.name;
 				product.price = req.body.price;
 				product.discount = req.body.discount;
